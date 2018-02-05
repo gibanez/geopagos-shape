@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="display-4 text-center">Shapes</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{circle.Type}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Info</h6>
+                        <p class="card-text">
+
+                        <dl>
+                            <dt>Diameter: </dt>
+                            <dd>{{circle.Diameter}}</dd>
+                            <dt>Area: </dt>
+                            <dd>{{circle.Area}}</dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{square.Type}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Info</h6>
+                        <p class="card-text">
+                        <dl>
+                            <dt>Base: </dt>
+                            <dd>{{square.base}}</dd>
+                            <dt>Height: </dt>
+                            <dd>{{square.height}}</dd>
+                            <dt>Area: </dt>
+                            <dd>{{square.Area}}</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{triangle.Type}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Info</h6>
+                        <p class="card-text">
+                        <dl>
+                            <dt>Base: </dt>
+                            <dd>{{triangle.base}}</dd>
+                            <dt>Height: </dt>
+                            <dd>{{triangle.height}}</dd>
+                            <dt>Area: </dt>
+                            <dd>{{triangle.Area}}</dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
